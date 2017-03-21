@@ -1,0 +1,29 @@
+git init
+git add .
+git commit -m ""
+git remote add origin linh_roject .
+git push -u origin master
+
+//Khi sua code 
+git add . 
+git commit --amend --no-edit
+git push origin ten_nhanh -f
+//Khi keo code ve
+git pull master
+-------------------------------------------------------
+//branch de sua thoi 
+//tao mot nhanh moi de lam viec ... nhanh lam viec cua chung ta la master khi sua doi thi minh vao nhanh moi sua doi ... 
+//neu nhanh moi sua doi dung thi ta cap nhat no vao nhanh master 
+git branch ten_nhanh
+// de kiem tra co bao nhieu nhanh
+git branch
+//Check out mot branch ... Nghia la minh vao branch do de lam viec
+git checkout ten_nhanh
+//sau khi tao nhanh xong ta se day code chinh sua cua minh lenh nhanh 
+git add .
+git commit -m ""
+git push origin ten_nhanh
+
+//Gop du lieu tu mot branch ... nghia la gop nhung thay doi tu nhanh moi vao nhanh master
+git checkout master //vao nhanh master
+git merge ten_nhanh //merge ten_nhanh vao master => moi thay doi o ten_nhanh se vao master
